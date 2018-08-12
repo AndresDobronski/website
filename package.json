@@ -1,0 +1,19 @@
+{
+  "name": "website",
+  "version": "0.0.1",
+  "description": "My tiptop Nuxt.js project",
+  "author": "Tristan Kimball",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^1.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1",
+    "standard": "^11.0.1"
+  }
+}
