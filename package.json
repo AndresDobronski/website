@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "0.0.1",
-  "description": "My tiptop Nuxt.js project",
+  "description": "Official website for the ASU Esports Association",
   "author": "Tristan Kimball",
   "scripts": {
     "dev": "nuxt",
