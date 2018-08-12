@@ -1,4 +1,5 @@
 const pkg = require('./package')
+const join = require('path').join
 
 module.exports = {
   mode: 'universal',
@@ -45,23 +46,22 @@ module.exports = {
   loading: { color: '#FFFFFF' },
 
   /*
+  ** Plugins to load before mounting the App
+  */
+  plugins: ['~/plugins/vuetify.js'],
+
+  /*
   ** Global CSS
   */
+
   css: [
     '~/css/main.css'
   ],
 
   /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
-
-  /*
   ** Nuxt.js modules
   */
-  modules: [
-  ],
+  modules: [],
 
   /*
   ** Build configuration
@@ -70,8 +70,9 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+    vendor: ['~/plugins/vuetify.js'],
+    extractCSS: true,
     extend(config, ctx) {
-      
     }
   }
 }
