@@ -6,7 +6,7 @@ import colors from 'vuetify/es5/util/colors'
 
 Vue.use(Vuetify, { theme: {
   primary: "#7B1C3B",
-  accent: '#FFC525',
+  accent: '#FFC627',
   secondary: '#353535',
   info: '#0D47A1',
   warning: '#ffb300',
