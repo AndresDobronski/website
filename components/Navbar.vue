@@ -3,6 +3,7 @@
     color="secondary"
     dark
   >
+    <v-toolbar-side-icon class="hidden-md-and-up" />
     <v-toolbar-title>
       <a href="/">
         <img src="/logo.png" />
@@ -14,13 +15,16 @@
     <v-spacer />
     <v-toolbar-items class="hidden-sm-and-down">
       <v-btn flat>
-        Home
+        About
+      </v-btn>
+      <v-btn flat>
+        Achievements
       </v-btn>
       <v-btn flat>
         Teams
       </v-btn>
       <v-btn flat>
-        Achievements
+        Staff
       </v-btn>
     </v-toolbar-items>
   </v-toolbar>
