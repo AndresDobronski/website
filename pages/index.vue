@@ -8,14 +8,21 @@
       <v-container
         fill-height
       >
-        <v-layout align-center>
+        <v-layout
+          align-content-center
+          wrap
+        >
           <v-flex xs12>
-            <h3 class="display-3">ASU Esports</h3>
-            <span class="subheading">
+            <h3 class="text-xs-center display-3">ASU Esports</h3>
+            <p class="text-xs-center subheading">
               We are the largest esports club at ASU, fielding teams for several games and fostering a community of fans and gamers.
-            </span>
+            </p>
             <v-divider class="my-3" />
-            <span class="title">Join our Discord!</span>
+          </v-flex>
+          <v-flex xs12>
+            <p class="text-xs-center title">Join our Discord!</p>
+          </v-flex>
+          <v-flex xs12>
             <iframe
               class="discord"
               src="https://discordapp.com/widget?id=198240842626891776&theme=dark"
@@ -39,7 +46,10 @@ export default {
 
 <style scoped>
 .discord {
-  margin-top: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
   width: 75vw;
   height: 40vh;
   min-width: 325px;
