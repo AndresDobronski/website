@@ -2,10 +2,8 @@ import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.css'
 
-import colors from 'vuetify/es5/util/colors'
-
 Vue.use(Vuetify, { theme: {
-  primary: "#7B1C3B",
+  primary: '#7B1C3B',
   accent: '#FFC627',
   secondary: '#353535',
   info: '#0D47A1',
