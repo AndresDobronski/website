@@ -1,59 +1,48 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        website
-      </h1>
-      <h2 class="subtitle">
-        My tiptop Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+  <div>
+    <v-jumbotron
+      :gradient="gradient"
+      height="100vh"
+      dark
+    >
+      <v-container
+        fill-height
+      >
+        <v-layout align-center>
+          <v-flex xs12>
+            <h3 class="display-3">ASU Esports</h3>
+            <span class="subheading">
+              We are the largest esports club at ASU, fielding teams for several games and fostering a community of fans and gamers.
+            </span>
+            <v-divider class="my-3" />
+            <span class="title">Join our Discord!</span>
+            <iframe
+              class="discord"
+              src="https://discordapp.com/widget?id=198240842626891776&theme=dark"
+              allowtransparency="true"
+              frameborder="0"
+            />
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-jumbotron>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
-  }
+  data: () => ({
+    gradient: 'to top right, rgba(255, 198, 39, 0.5), rgba(94, 24, 47, 1)'
+  })
 }
 </script>
 
-<style>
-.container
-{
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.title
-{
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-.subtitle
-{
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-.links
-{
-  padding-top: 15px;
+<style scoped>
+.discord {
+  margin-top: 2em;
+  width: 75vw;
+  height: 40vh;
+  min-width: 325px;
+  min-height: 325px;
 }
 </style>
